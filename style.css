@@ -1,0 +1,110 @@
+/** Jumbotron **/
+
+#landing-view {
+    
+    background-attachment: fixed;
+    background-image: url(/images/IMG_1645.JPG);
+    background-position: bottom;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    margin-bottom: 0px;
+    z-index: 1;
+    opacity: 0.6;
+    
+}
+
+/** Headings **/
+
+h2 {text-align: center;}
+
+/** Nav Bar **/
+
+navbar-header {float: right;}
+
+nav { text-align: center; }
+
+
+ul { display: inline-block; }
+
+li { display: inline-block;
+margin:0 auto;
+}
+
+
+/** Project Cards **/
+
+#image-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+
+
+/** Contact Form **/
+
+
+.contact-form {
+    float: left;
+    top: 6%;
+}
+
+#contact-head {
+    margin: 30px -11px 25px 0px;
+}
+
+.contact {
+    margin: 15px 0px 15px 0px;
+}
+
+
+/** Footer **/
+
+
+footer {
+    border-color: transparent;
+    text-align: center;
+}
+
+.foot {
+    margin-bottom: 20px;
+}
+
+a {
+    padding: 5px 15px 5px 10px;
+    background-color: transparent;
+}
+
+.alignment {
+    line-height: 2px;
+}
+
+i {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    padding: 20px 0;
+    border-radius: 50%;
+    font-size: 28px;
+    text-align: center;
+    vertical-align: middle;
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+
+}
+
+i:hover {
+    color: #564F6F;
+
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
