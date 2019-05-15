@@ -56,49 +56,71 @@
     <section class="jumbotron" id="sculpture">
         <div class="container">
             <h2>Sculpture</h2>
-            <p>Colette O'Beirne is an Irish sculptress, working in clay, ceramic and bronze.</p>
-            <div class="row">
-                <div class="col-sm-6" ;>
-                    <div class="thumbnail">
-                        <a href="./images/IMG_4879.JPG ">
-                            <img class="img-rounded img-responsive" src="./images/IMG_4879.JPG " alt="Raging Bull" style="width:100%">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="thumbnail">
+                            <a href="./images/IMG_4879.JPG ">
+                            <img class="img-rounded img-responsive" src="./images/IMG_4879.JPG " alt="Raging Bull" style="width:100% height:50%">
                                 <div class="caption">
                                   <p>Lorem ipsum...</p>
                                 </div>
                          </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-6" ;>
-                    <div class="thumbnail">
-                        <a href="./images/IMG_4879.JPG ">
-                            <img class="img-rounded img-responsive" src="./images/IMG_3040.jpg " alt="Swooping Eagle" style="width:100%">
+
+                    <div class="item">
+                        <div class="thumbnail">
+                            <a href="./images/IMG_4879.JPG ">
+                            <img class="img-rounded img-responsive" src="./images/IMG_3040.jpg " alt="Swooping Eagle" style="width:100% height:50%">
                                 <div class="caption">
                                   <p>Lorem ipsum...</p>
                                 </div>
                          </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-6" ;>
-                    <div class="thumbnail">
-                        <a href="./images/IMG_0541_face0.jpg ">
-                            <img class="img-rounded img-responsive" src="./images/IMG_0541_face0.jpg" alt="Desultory Demon" style="width:100%">
+                    <div class="item">
+                        <div class="thumbnail">
+                            <a href="./images/IMG_0541_face0.jpg ">
+                            <img class="img-rounded img-responsive" src="./images/IMG_0541_face0.jpg" alt="Desultory Demon" style="width:100% height:50%">
                                 <div class="caption">
                                   <p>Lorem ipsum...</p>
                                 </div>
                              </a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-6" ;>
-                    <div class="thumbnail">
-                        <a href="./images/IMG_0494_face0.jpg">
-                            <img class="img-rounded img-responsive" src="./images/IMG_0494_face0.jpg" alt="Brooding Beckett" style="width:100%">
+                    <div class="item">
+                        <div class="thumbnail">
+                            <a href="./images/IMG_0494_face0.jpg">
+                            <img class="img-rounded img-responsive" src="./images/IMG_0494_face0.jpg" alt="Brooding Beckett" style="width:100% height:50%">
                                 <div class="caption">
                                   <p>Lorem ipsum...</p>
                                 </div>
                              </a>
+                        </div>
                     </div>
                 </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left"></span>
+                  <span class="sr-only">Previous</span>
+            </a>
+                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                  <span class="sr-only">Next</span>
+            </a>
             </div>
+        </div>
         </div>
     </section>
     <section class="jumbotron " id="music">
