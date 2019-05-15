@@ -3,8 +3,8 @@
 #landing-view {
     
     background-attachment: fixed;
-    background-image: url(/images/IMG_1645.JPG);
-    background-position: bottom;
+    background-image: url(/images/cropped_background_image.jpeg);
+    background-position: top;
     background-size: cover;
     height: 100vh;
     width: 100vw;
@@ -14,36 +14,38 @@
     
 }
 
+/** navbar **/
+
+/** About row **/
+
+
+
+/** Name & Title **/
+
+.top {
+    padding-left: 12px;
+    margin-top: 20%;
+}
+
+h1 {
+    padding-top: 5%;
+    font-size: 5.5em;
+    font-weight: 200;
+    color: black;
+    z-index: 2;
+}
+
+.jumbotron p {
+    font-size: 2em;
+}
+
+
 /** Headings **/
 
 h2 {text-align: center;}
 
-/** Nav Bar **/
-
-navbar-header {float: right;}
-
-nav { text-align: center; }
-
-
-ul { display: inline-block; }
-
-li { display: inline-block;
-margin:0 auto;
-}
-
-
-/** Project Cards **/
-
-#image-row {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 4px;
-}
-
-
 
 /** Contact Form **/
-
 
 .contact-form {
     float: left;
