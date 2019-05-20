@@ -1,7 +1,10 @@
-/** Jumbotron **/
+body {
+    font-family: 'Helvetica', sans-serif;
+}
 
-#landing-view {
-    
+/** launch-pad **/
+
+#launch-pad {
     background-attachment: fixed;
     background-image: url(/images/cropped_background_image.jpeg);
     background-position: top;
@@ -9,15 +12,92 @@
     height: 100vh;
     width: 100vw;
     margin-bottom: 0px;
-    z-index: 1;
-    opacity: 0.6;
-    
+    z-index: -9;
+    opacity: 0.8;
 }
 
 /** navbar **/
 
-/** About row **/
+.navbar {
+    background-color: transparent;
+    border-color: transparent;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+}
 
+.navbar .navbar-collapse {
+    text-align: right;
+    border-top: 1px solid transparent;
+    overflow-x: hidden;
+}
+
+.navbar-nav li a {
+    padding: 20px 25px 15px 25px;
+    color: transparent;
+}
+
+.navbar-fixed-top .container {
+    text-align: right;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+
+a {
+    background-color: #E4E4E4;
+    color: #888888;
+    font-size: 1.12em;
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+}
+
+.navbar-default .navbar-nav li a:hover {
+    color: #564F6F;
+}
+
+.navbar-right {
+    float: right!important;
+}
+
+@media (max-width: 5000px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,
+    .navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in {
+        display: block !important;
+    }
+}
 
 
 /** Name & Title **/
@@ -25,31 +105,120 @@
 .top {
     padding-left: 12px;
     margin-top: 20%;
+    color: #ffffff;
 }
 
-h1 {
+title {
     padding-top: 5%;
     font-size: 5.5em;
-    font-weight: 200;
-    color: black;
-    z-index: 2;
+    font-weight: 300;
+    color: inherit;
 }
 
-.jumbotron p {
-    font-size: 2em;
+#bio {
+    color: inherit;
+    font-weight: 100;
+    font-size: 14px;
+    padding-right: 50%;
+    text-align: justify;
+    text-justify: inter-word;
+
+}
+
+/** Sculpture Row **/
+
+#sculpture {
+    padding-top: 10px;}
+    
+#sculpture-container img{
+    width: 800px;
+    height: 600px;
+    object-fit: cover;
+    ;}
+
+/** Image grid **/
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 
 /** Headings **/
 
-h2 {text-align: center;}
+h2 {
+    text-align: center;
+}
+
+/** Music Row **/
+
+#music {
+    height: 100vh;
+    width: 100vw;
+    margin-bottom: 0px;
+    
+}
+
+#music-box{
+     width: 800px;
+    height: 600px;
+    object-fit: cover;
+    ;}
+
+/** Contact Row **/
+
+#contact-row {
+    background-attachment: fixed;
+    background-image: url(/images/IMG_1645.JPG);
+    background-position: bottom;
+    background-size: cover;
+    height: 100px;
+    width: 42px;
+    text-align: left;
+    margin-bottom: 0px;
+}
 
 
 /** Contact Form **/
 
-.contact-form {
+#contact-form-container {
+    height: 50%;
+    width: 50%;
+    margin-left: 5%;
+    margin-top: 20%;
+}
+
+#contact-form {
     float: left;
-    top: 6%;
 }
 
 #contact-head {
@@ -57,15 +226,21 @@ h2 {text-align: center;}
 }
 
 .contact {
+    height: 50%;
+    width: 50%;
     margin: 15px 0px 15px 0px;
 }
+
+row-contact form-group {
+    width: 50%;}
 
 
 /** Footer **/
 
-
 footer {
+    position: fixed;
     border-color: transparent;
+    background-clip: transparent;
     text-align: center;
 }
 
@@ -101,12 +276,4 @@ i {
 
 i:hover {
     color: #564F6F;
-
-}
-
-@media screen and (max-width: 800px) {
-  .column {
-    flex: 50%;
-    max-width: 50%;
-  }
 }
