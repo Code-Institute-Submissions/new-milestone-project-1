@@ -128,11 +128,11 @@ title {
 /** Sculpture Row **/
 
 #sculpture {
-    padding-top: 10px;}
+    padding: 30px;}
     
 #sculpture-container img{
-    width: 800px;
-    height: 600px;
+    width: 600px;
+    height: 400px;
     object-fit: cover;
     ;}
 
@@ -172,33 +172,35 @@ title {
   }
 }
 
-
 /** Music Row **/
 
 #music{
-    height: 100vh;}
+    height: 100vh;
+    width: 100vw;
+}
 
 .video-container-main {
-    height: 100%;
-    width: 100%;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    width: 80vw;
+    height: 80vh;
+    background-size: contain;
 }
 
 .video-wrapper {
-    background-size: cover;
-    padding: 30px;
-    background: black;
-    border-radius: 10px;
-    box-shadow: 0px 0px 100px #fff;
+    background-color: black;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
 }
 
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+}
 
 /** Contact Row **/
 
@@ -213,12 +215,12 @@ title {
     margin-bottom: 0px;
 }
 
-
 /** Contact Form **/
 
 #contact-heading{
     color: white;
     padding: 10px;
+    font-size: 50px;
     text-align: center;
 }
 
@@ -245,25 +247,27 @@ title {
     
      ;}
 
-
-
 /** Footer **/
 
-footer {
+page-footer {
+    position: fixed;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
     display: inline-block;
     border-color: transparent;
-    color: inherit;
+    background-color: inherit;
     text-align: center;
 }
+
+/** Icons **/
 
 a {
     background-color: transparent;}
 
 i {
     color: grey;
-    width: 150px;
-    height: 150px;
-    padding: 20px 20px;
+    padding: 10px 10px;
     border-radius: 50%;
     font-size: 38px;
     text-align: center;
@@ -271,7 +275,7 @@ i {
     transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
-    margin-top: 2.5px;
+    margin-top: 5px;
     margin-bottom: 2.5px;
 }
 
