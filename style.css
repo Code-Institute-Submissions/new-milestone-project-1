@@ -1,5 +1,6 @@
 body {
     font-family: 'Helvetica', sans-serif;
+    background-color: white;
 }
 
 /** launch-pad **/
@@ -12,29 +13,28 @@ body {
     height: 100vh;
     width: 100vw;
     margin-bottom: 0px;
-    z-index: -9;
     opacity: 0.8;
 }
 
 /** navbar **/
 
-.navbar {
-    background-color: transparent;
+.navbar-fixed-top {
     border-color: transparent;
     letter-spacing: 7px;
     text-transform: uppercase;
-    position: static;
-    z-index: 10000;
-    margin-top: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
+    background-color: transparent;
 }
 
-.navbar .container {
+navbar-default{
+    background-color: transparent;
+    background-size: contain;
+}
+
+.navbar-fixed-top .container {
     text-align: right;
     margin-right: 1%;
     margin-top: 1%;
-    object-fit: cover;
+    background-color: transparent;
 }
 
 .navbar .navbar-collapse {
@@ -45,7 +45,7 @@ body {
 
 .navbar-nav li a {
     padding: 20px 25px 15px 25px;
-    color: transparent;
+    color: white;
 }
 
 a {
@@ -60,9 +60,12 @@ a {
 }
 
 .navbar-default .navbar-nav li a:hover {
-    color: #564F6F;
+    color: white;
 }
 
+.navbar-right {
+    float: right!important;
+}
 
 @media (max-width: 5000px) {
     .navbar-header {
@@ -109,6 +112,7 @@ a {
     padding-left: 12px;
     margin-top: 20%;
     color: #ffffff;
+    background-size: contain;
 }
 
 title {
@@ -131,82 +135,77 @@ title {
 /** Sculpture Row **/
 
 #sculpture {
-    padding: 30px;
-}
-
-#sculpture-container img {
+    padding: 40px;}
+    
+#sculpture-container img{
     width: 600px;
     height: 400px;
     object-fit: cover;
-    ;
-}
+    ;}
 
 /** Image grid **/
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0 4px;
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
 }
 
-/* Create four equal columns that sits next to each other */
-
-.column {
-    flex: 25%;
-    max-width: 25%;
-    padding: 0 4px;
+.image-column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
 }
 
-.column img {
-    margin-top: 8px;
-    vertical-align: middle;
+.image-column img {
+  margin-top: 8px;
+  vertical-align: middle;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
-
 @media screen and (max-width: 800px) {
-    .column {
-        flex: 50%;
-        max-width: 50%;
-    }
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-
 @media screen and (max-width: 600px) {
-    .column {
-        flex: 100%;
-        max-width: 100%;
-    }
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 /** Music Row **/
 
-.jumbotron {
-    display: flex;
-    align-items: center;
-    background-size: cover;
-}
-
-.nomargin {
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-.video-container-main {
+#music{
+    height: 100vh;
     width: 100vw;
 }
 
-.video-wrapper {
-    width: calc(100% - 300px);
-    height: 100%;
+.video-container-main {
+    width: 80vw;
+    height: 80vh;
+    background-size: contain;
 }
 
-iframe {
+.video-wrapper {
+    background-color: black;
     position: relative;
-    background-size: cover;
-    object-fit: cover;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+}
 
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
 }
 
 /** Contact Row **/
@@ -224,14 +223,14 @@ iframe {
 
 /** Contact Form **/
 
-#contact-heading {
+#contact-heading{
     color: white;
     padding: 10px;
     font-size: 50px;
     text-align: center;
 }
 
-#contact-blurb {
+#contact-blurb{
     color: white;
     font-size: 16px;
 }
@@ -247,14 +246,12 @@ iframe {
     z-index: -9;
     opacity: 0.8;
 }
-
-#contact-form-container {
-    margin-top: 20%;
-    width: 70%;
-    float: right;
-
-    ;
-}
+ #contact-form-container{
+     margin-top: 20%;
+     width: 70%;
+     float: right;
+    
+     ;}
 
 /** Footer **/
 
@@ -272,8 +269,7 @@ page-footer {
 /** Icons **/
 
 a {
-    background-color: transparent;
-}
+    background-color: transparent;}
 
 i {
     color: grey;
@@ -288,3 +284,4 @@ i {
     margin-top: 5px;
     margin-bottom: 2.5px;
 }
+
