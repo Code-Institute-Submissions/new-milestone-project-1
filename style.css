@@ -7,7 +7,7 @@ body {
 
 #launch-pad {
     background-attachment: fixed;
-    background-image: url(../images/cropped_background_image.JPG);
+    background-image: url(images/cropped_background_image.JPG);
     background-position: top;
     background-size: cover;
     height: 100vh;
