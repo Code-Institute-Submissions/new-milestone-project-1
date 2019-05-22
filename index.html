@@ -23,10 +23,8 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-    <!-- header -->
-    <header class="jumbotron" id="launch-pad">
-
-        <!--Navbar-->
+    <!--Navbar-->
+    <div class="container">
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <div class="navbar-header">
@@ -37,7 +35,7 @@
                             <span class="icon-bar"></span>
                         </button>
                 </div>
-                <div id="navbar" class="navbar-collapse collapse">
+                <div class="navbar-collapse collapse" id="navbar">
                     <ul class="nav navbar-nav navbar-right">
                         <li><a class='page-scroll' href="#sculpture">Sculpture</a></li>
                         <li><a class='page-scroll' href="#music">Music</a></li>
@@ -46,66 +44,108 @@
                 </div>
             </div>
         </nav>
+    </div>
+
+    <!-- header -->
+    <header class="container-fluid" id="launch-pad">
 
         <!--Name & Title-->
-
-        <div class="container top">
-            <h1 class='name'>Colette O'Beirne</h1>
-            <p class='title'>Sculptor & Musician</p>
-            <p class='bio'>Colette O'Beirne is an Irish sculptress, working in clay, ceramic and bronze. Colette takes the natural world and animal forms as the subject of many of her works. Through a delicate interplay of gesture and poise, she elicits the vital spirit
-                latent in nature's in these biological forms. Originally from the East Wall, Dublin, Colette O'Beirne studied sculpture at the Academy of Art San Francisco, California, before founding her Dublin-based studio in 2017. She has had her work
-                exhibited in the Spring Exhibition of the Palace of Fine Arts in San Francisco California, and in the Los Gatos Gallery in conjunction with the Los Gatos Irish Arts Festival.
-            </p>
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="container" id="titlecontainer">
+                    <h1 id="maintitle">Colette O'Beirne</h1>
+                    <h2 id="subtitle">Sculptor & Musician</h2>
+                    <p id='bio'>Colette O'Beirne is an Irish sculptress, working in clay, ceramic and bronze. Colette takes the natural world and animal forms as the subject of many of her works. Through a delicate interplay of gesture and poise, she elicits the
+                        vital spirit latent in nature's in these biological forms. Originally from the East Wall, Dublin, Colette O'Beirne studied sculpture at the Academy of Art San Francisco, California, before founding her Dublin-based studio in 2017.
+                        She has had her work exhibited in the Spring Exhibition of the Palace of Fine Arts in San Francisco California, and in the Los Gatos Gallery in conjunction with the Los Gatos Irish Arts Festival.
+                    </p>
+                </div>
+            </div>
         </div>
-
     </header>
 
     <!-- Sculpture section -->
-    <section class="jumbotron scroll" id="sculpture">
-        <div class="container-fluid" id="sculpture-container">
-            <div class="col-xs-6 col-sm-4">
-                <a href="/images/IMG02281024.jpg"><img src="/images/IMG02281024.jpg" class="thumbnail img-responsive" alt="Leaping Horse"></a>
-                <a href="/images/IMG_0494_face0.jpg"><img src="/images/IMG_0494_face0.jpg" class="thumbnail img-responsive" alt="Desultory Demon"></a>
-                <a href="/images/IMG_0103.jpg"><img src="/images/IMG_0103.jpg" class="thumbnail img-responsive" alt="Meditating Monk"></a>
-                <a href="/images/IMG_0228_1024.jpg"><img src="/images/IMG_0228_1024.jpg" class="thumbnail img-responsive" alt="Brooding Beckett"></a>
-            </div>
-            <div class="col-xs-6 col-sm-4">
-                <a href="/images/IMG_0541_face0.jpg"><img src="/images/IMG_0541_face0.jpg" class="thumbnail img-responsive" alt="Dani"></a>
-                <a href="/images/IMG_1380.jpg"><img src="/images/IMG_1380.jpg" class="thumbnail img-responsive" alt="Clutching Eagle"></a>
-                <a href="/images/IMG_1429_1024.jpg"><img src="/images/IMG_1429_1024.jpg" class="thumbnail img-responsive" alt="Albino Pepper"></a>
-                <a href="/images/IMG_1650_1024.jpg"><img src="/images/IMG_1650_1024.jpg" class="thumbnail img-responsive" alt="Uriel"></a>
-            </div>
-            <div class="col-xs-6 col-sm-4">
-                <a href="/images/IMG_1682_1024.jpg"><img src="/images/IMG_1682_1024.jpg" class="thumbnail img-responsive" alt=""></a>
-                <a href="/images/IMG_3040.jpg"><img src="/images/IMG_3040.jpg" class="thumbnail img-responsive" alt="Leaping Horse"></a>
-                <a href="/images/IMG_4879.JPG"><img src="/images/IMG_4879.JPG" class="thumbnail img-responsive" alt="Twin Caps"></a>
-                <a href="/images/theresa.jpeg"><img src="/images/theresa.jpeg" class="thumbnail img-responsive" alt="Theresa of Avila"></a>
-            </div>
-        </div>
-        </div>
-    </section>
 
-    <!-- Music section -->
-
-    <section class="jumbotron scroll" id="music">
-        <div class="container no-margin">
-            <div class="row video-container-main">
-                <div class="video-wrapper embed-responsive embed-responsive-16by9 center-align">
-                    <iframe class="embed-responsive-item video" src="https://www.youtube.com/embed/oMMb1Cjz0BQ" frameborder="0" scrolling="no"></iframe>
+    <section class="container-fluid" id="sculpture">
+        <div class="container" id="sculpture-container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <a href="/images/IMG02281024.jpg"><img src="/images/IMG02281024.jpg" class="thumbnail img-responsive" alt="Leaping Horse"></a>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <a href="/images/IMG_0541_face0.jpg"><img src="/images/IMG_0541_face0.jpg" class="thumbnail img-responsive" alt="Dani"></a>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <a href="/images/IMG_1682_1024.jpg"><img src="/images/IMG_1682_1024.jpg" class="thumbnail img-responsive" alt=""></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <a href="/images/IMG_0494_face0.jpg"><img src="/images/IMG_0494_face0.jpg" class="thumbnail img-responsive" alt="Brooding Beckett"></a>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <a href="/images/IMG_0541_face0.jpg"><img src="/images/IMG_0541_face0.jpg" class="thumbnail img-responsive" alt="Dani"></a>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <a href="/images/IMG_1380.jpg"><img src="/images/IMG_1380.jpg" class="thumbnail img-responsive" alt="Clutching Eagle"></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <a href="/images/IMG_1429_1024.jpg"><img src="/images/IMG_1429_1024.jpg" class="thumbnail img-responsive" alt="Albino Pepper"></a>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <a href="/images/IMG_1650_1024.jpg"><img src="/images/IMG_1650_1024.jpg" class="thumbnail img-responsive" alt="Uriel"></a>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <a href="/images/IMG_1682_1024.jpg"><img src="/images/IMG_1682_1024.jpg" class="thumbnail img-responsive" alt=""></a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-4">
+                    <a href="/images/IMG_3040.jpg"><img src="/images/IMG_3040.jpg" class="thumbnail img-responsive" alt="Leaping Horse"></a>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <a href="/images/IMG_4879.JPG"><img src="/images/IMG_4879.JPG" class="thumbnail img-responsive" alt="Twin Caps"></a>
+                </div>
+                <div class="col-xs-12 col-sm-4">
+                    <a href="/images/theresa.jpeg"><img src="/images/theresa.jpeg" class="thumbnail img-responsive" alt="Theresa of Avila"></a>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Music section -->
+
+    <section class="container-fluid" id="music">
+        <div class="row music-row">
+            <div class="col-xs-12">
+                <div class="video-container-main">
+                    <div class="wrapper">
+                        <iframe class="embed-responsive-item video center-block vertical-center" src="https://www.youtube.com/embed/oMMb1Cjz0BQ" frameborder="0" scrolling="no"></iframe>
+                    </div>
+                </div>
+                <div class="row music-row">
+                    <div class="col-xs-12">
+                        <div class="video-container-main">
+                            <div class="wrapper">
+                                <iframe class="embed-responsive-item video center-block vertical-center" src="https://www.youtube.com/embed/nvY-TTnA2Nk" scrolling="no" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
     <!--Contact form-->
 
-    <section class="jumbotron scroll" id="contact-row">
-        <div class="row">
-            <div class="col-xs-6">
+    <section class="container-fluid">
+        <div class="row" id="contact-row">
+            <div class="col-xs-12 col-sm-12 col-lg-6">
                 <div id="contact-form-container">
                     <h2 id="contact-heading">Contact</h2>
                     <p id="contact-blurb">Contact Colette for queries regarding purchases, commissions, exhibitions, and performances.</p>
-                    <form action="/action_page.php" method="post">
+                    <form action="thankyou.html" method="get">
                         <div class="form-group">
                             <input type="text" class="form-control" id="name" placeholder="Name" required>
                         </div>
