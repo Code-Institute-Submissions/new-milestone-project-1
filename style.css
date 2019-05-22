@@ -7,7 +7,7 @@ body {
 
 #launch-pad {
     background-attachment: fixed;
-    background-image: url(../images/cropped_background_image.jpeg);
+    background-image: url(../images/cropped_background_image.JPG);
     background-position: top;
     background-size: cover;
     height: 100vh;
@@ -238,7 +238,7 @@ a {
 /** Contact Form **/
 
 #contact-form-container {
-    margin-top: 25%;
+    margin-top: 15%;
     margin-left: 10%;
     width: 60%;
     float: left;
