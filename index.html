@@ -23,46 +23,53 @@
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
+    <!-- header -->
+    <header class="container-fluid" id="launch-pad">
+        <!--Name & Title-->
+        <div class="row">
+            <div class="col-xs-12">
+                <div class="mask-container container-lg" id="titlecontainer">
+                    <div class="title-wrapper">
+                        <h1 id="maintitle">Colette O'Beirne</h1>
+                        <h2 id="subtitle">Sculptor & Musician</h2>
+                        <p id='bio'>Colette O'Beirne is an Irish sculptress, working in clay, ceramic and bronze. Colette takes the natural world and animal forms as the subject of many of her works. Through a delicate interplay of gesture and poise, she elicits
+                            the vital spirit latent in nature's in these biological forms. Originally from the East Wall, Dublin, Colette O'Beirne studied sculpture at the Academy of Art San Francisco, California, before founding her Dublin-based studio
+                            in 2017. She has had her work exhibited in the Spring Exhibition of the Palace of Fine Arts in San Francisco California, and in the Los Gatos Gallery in conjunction with the Los Gatos Irish Arts Festival.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
     <!--Navbar-->
-    <div class="container">
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container">
-                <div class="navbar-header">
-                    <button id='scroll-button' type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <nav class="navbar navbar-default navbar-fixed-top">
+                    <div class="container">
+                        <div class="navbar-header">
+                            <button id='scroll-button' type="button" class="navbar-toggle collapsed " data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                </div>
-                <div class="navbar-collapse collapse" id="navbar">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a class='page-scroll' href="#sculpture">Sculpture</a></li>
-                        <li><a class='page-scroll' href="#music">Music</a></li>
-                        <li><a class='page-scroll' href="#contact-row">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </div>
-
-    <!-- header -->
-    <header class="container-fluid" id="launch-pad">
-
-        <!--Name & Title-->
-        <div class="row">
-            <div class="col-xs-12">
-                <div class="container" id="titlecontainer">
-                    <h1 id="maintitle">Colette O'Beirne</h1>
-                    <h2 id="subtitle">Sculptor & Musician</h2>
-                    <p id='bio'>Colette O'Beirne is an Irish sculptress, working in clay, ceramic and bronze. Colette takes the natural world and animal forms as the subject of many of her works. Through a delicate interplay of gesture and poise, she elicits the
-                        vital spirit latent in nature's in these biological forms. Originally from the East Wall, Dublin, Colette O'Beirne studied sculpture at the Academy of Art San Francisco, California, before founding her Dublin-based studio in 2017.
-                        She has had her work exhibited in the Spring Exhibition of the Palace of Fine Arts in San Francisco California, and in the Los Gatos Gallery in conjunction with the Los Gatos Irish Arts Festival.
-                    </p>
-                </div>
+                        </div>
+                        <div class="navbar-collapse collapse" id="navbar">
+                            <ul class="nav navbar-nav navbar-right">
+                                <li><a class='page-scroll' href="#sculpture">Sculpture</a></li>
+                                <li><a class='page-scroll' href="#music">Music</a></li>
+                                <li><a class='page-scroll' href="#contact-row">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
             </div>
         </div>
-    </header>
+    </div>
+
+
 
     <!-- Sculpture section -->
 
@@ -118,23 +125,20 @@
     <!-- Music section -->
 
     <section class="container-fluid" id="music">
-        <div class="row music-row">
-            <div class="col-xs-12">
-                <div class="video-container-main">
-                    <div class="wrapper">
+        <div class="row">
+            <div class="video-container-main">
+                <div class="col-xs-12 col-lg-6">
+                    <div class="video-wrapper">
                         <iframe class="embed-responsive-item video center-block vertical-center" src="https://www.youtube.com/embed/oMMb1Cjz0BQ" frameborder="0" scrolling="no"></iframe>
                     </div>
                 </div>
-                <div class="row music-row">
-                    <div class="col-xs-12">
-                        <div class="video-container-main">
-                            <div class="wrapper">
-                                <iframe class="embed-responsive-item video center-block vertical-center" src="https://www.youtube.com/embed/nvY-TTnA2Nk" scrolling="no" frameborder="0"></iframe>
-                            </div>
-                        </div>
+                <div class="col-xs-12 col-lg-6">
+                    <div class="video-wrapper">
+                        <iframe class="embed-responsive-item video center-block vertical-center" src="https://www.youtube.com/embed/nvY-TTnA2Nk" scrolling="no" frameborder="0"></iframe>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
 
     <!--Contact form-->
@@ -163,16 +167,20 @@
     </section>
 
     <!--footer-->
-    <footer class="page-footer fixed-bottom">
-        <div class="col-xs-12 col-sm-12">
-            <div class="container-fluid text-center">
-                <a href="https://www.facebook.com/colette.obeirne.1"><i class="fab fa-facebook"></i></a>
-                <a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
-                <a href="www.linkedin.com"><i class="fab fa-linkedin"></i></a>
-                <a href="https://www.youtube.com/user/bobsinnepalshekitout"><i class="fab fa-youtube"></i></a>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12">
+                <footer class="page-footer fixed-bottom">
+                    <div class="container-fluid text-center">
+                        <a href="https://www.facebook.com/colette.obeirne.1"><i class="fab fa-facebook"></i></a>
+                        <a href="www.twitter.com"><i class="fab fa-twitter"></i></a>
+                        <a href="www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/user/bobsinnepalshekitout"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </footer>
             </div>
         </div>
-    </footer>
+    </div>
 </body>
 
 </html>
