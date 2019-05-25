@@ -54,12 +54,13 @@ navbar-default {
 
 .navbar-nav li a {
     padding: 20px 25px 15px 25px;
+    background-color: transparent;
     color: white;
 }
 
 a {
-    background-color: #E4E4E4;
-    color: #888888;
+    background-color: transparent;
+    color: transparent;
     font-size: 1.12em;
     padding-left: 10px;
     padding-right: 10px;
@@ -118,7 +119,6 @@ a {
     }
 }
 
-
 /** Name & Title **/
 
  #titlecontainer{
@@ -128,39 +128,31 @@ a {
     float: left;
     padding-right: 25px;
     border-radius: 25px;
-    background-color: rgb(239, 235, 235, 0.6);
+    background-color: rgb(239, 235, 235, 0.3);
     width: 60%;
     height: 50%;
-    background-size: contain;
     padding: 25px;
-}
-
-#title-wrapper {
-    background-size: contain;
-    
+    object-fit: contain;
 }
 
 #maintitle {
     color: white;
     font-weight: 300;
-    font-size: 52px;
-    padding-right: 25px;
-    z-index: 9;
+    font-size: 50px;
 }
 
 #subtitle {
     font-weight: 200;
     color: white;
     font-size: 32px;
-    padding-right: 25px;
 }
 
 #bio {
     color: white;
-    font-weight: 100;
+    font-size: 18px;
+    font-weight: 200;
     text-align: justify;
     text-justify: inter-word;
-    padding-right: 25px;
 }
 
 @media (max-width: 767px) {
@@ -193,57 +185,63 @@ a {
         text-align: justify;
         text-justify: inter-word;
     }
-
 }
 
 /** Sculpture Row **/
 
 #sculpture {
     padding: 40px;
+    background-color: white;
+   
+}
+
+#sculpture-container{
+    margin: auto;
+    border-radius: 25px;
+    background-color: rgb(239, 235, 235, 0.3);
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    padding: 25px;
 }
 
 #sculpture-container img {
     width: 600px;
     height: 400px;
     object-fit: cover;
-    ;
 }
-
 
 /** Music Row **/
 
 #music {
-    background-color: black;
-}
-
-.video-container-main {
-    width: 100%;
-    height: 100%;
-    margin: auto;
-}
-
-.video-container-main iframe {
-    width: 80%;
-    height: 80%;
-    padding: 20px;
-    border-radius: inherit;
+    background-color: white;
+    padding-top: 15px;
+    padding-bottom: 35px;
 }
 
 .video-wrapper{
-     background-color: #ddd;
-     border-radius: 75px;
+     margin: auto;
+     background-color: rgb(239, 235, 235, 0.3);
+     border-radius: 25px;
      border-color: black;
-     padding: 10px;
+     padding: 25px;
+     width: 100%;
+     height: 65%;
+     overflow: hidden;
 }
+
+iframe {
+    width: 90%;
+    heigh: 50%;
+    margin: auto;
+}
+
 .vertical-center {
   min-height: 100%;  
   min-height: 100vh;
-
   display: flex;
   align-items: center;
 }
-
-
 
 /** Contact Row **/
 
@@ -262,10 +260,16 @@ a {
 /** Contact Form **/
 
 #contact-form-container {
-    margin-top: 15%;
+    margin: auto;
     margin-left: 5%;
-    width: 100%;
-    float: left;
+    margin-top:20%;
+    padding-right: 25px;
+    border-radius: 25px;
+    background-color: rgb(239, 235, 235, 0.3);
+    width: 50%;
+    height: 50%;
+    background-size: contain;
+    padding: 25px;
 }
 
 #contact-heading {
@@ -280,28 +284,35 @@ a {
     font-size: 16px;
 }
 
+@media (max-width: 767px) {
+    #contact-form-container {
+    margin: auto;
+    width: 100%;
+    ;}
+
 
 /** Footer **/
 
-page-footer {
-    position: fixed;
-    height: 100px;
+footer {
+    color: black;
+    height: 10%;
     bottom: 0;
     width: 100%;
-    display: inline-block;
     border-color: transparent;
-    background-color: inherit;
+    background-color: rgb(239, 235, 235);
     text-align: center;
+}
+
+
+a{
+    color: transparent;
+    background-color: transparent;
 }
 
 /** Icons **/
 
-a {
-    background-color: transparent;
-}
-
-i {
-    color: grey;
+icons {
+    color: black;
     padding: 10px 10px;
     border-radius: 50%;
     font-size: 38px;
