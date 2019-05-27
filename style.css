@@ -46,6 +46,15 @@ body {
     margin-top: 1%;
 }
 
+#nav-menu-container{
+    margin: auto;
+    float: none;
+    padding-right: 25px;
+    border-radius: 25px;
+    background-color: rgb(239, 235, 235, 0.3);
+    width: auto;
+}
+
 .navbar.li.a {
     font-size: 1.12em;
     padding-left: 10px;
