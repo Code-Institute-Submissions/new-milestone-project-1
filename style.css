@@ -1,15 +1,14 @@
-html,body
-{
+html,
+body {
     font-family: 'Helvetica', sans-serif;
     background-color: white;
-    
-/* resolving issue of white space visible at the right margin during IPAD view */
 
+    /* resolving issue of white space visible at the right margin during IPAD view */
     width: 100%;
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 }
 
 /** launch-pad **/
@@ -27,17 +26,42 @@ html,body
 
 /** navbar **/
 
-.navbar-fixed-top {
-    border-color: transparent;
-    letter-spacing: 7px;
-    text-transform: uppercase;
+.navbar-default {
     background-color: transparent;
 }
 
-navbar-default {
+.navbar-fixed-top {
+    border-color: transparent;
+    letter-spacing: 6px;
+    text-transform: uppercase;
     background-color: transparent;
-    background-size: contain;
+    top: 0;
+    border-width: 0px;
 }
+
+/** navbar contents **/
+
+.navbar .navbar-collapse {
+    text-align: right;
+    border-top: 1px solid transparent;
+}
+
+.navbar-nav {
+    float: none!important;
+    margin-top: 7.5px;
+}
+
+/* navbar header */
+
+.navbar-header {
+    float: none;
+}
+
+.navbar-toggle {
+    display: block;
+}
+
+/** navbar container **/
 
 .navbar-fixed-top .container {
     text-align: right;
@@ -46,21 +70,10 @@ navbar-default {
     background-color: transparent;
 }
 
-.navbar .navbar-collapse {
-    text-align: right;
-    border-top: 1px solid transparent;
-    overflow-x: hidden;
-}
+/** navbar list **/
 
-.navbar-nav li a {
-    padding: 20px 25px 15px 25px;
-    background-color: transparent;
+.navbar-nav li {
     color: white;
-}
-
-a {
-    background-color: transparent;
-    color: transparent;
     font-size: 1.12em;
     padding-left: 10px;
     padding-right: 10px;
@@ -69,62 +82,30 @@ a {
     -webkit-transition: all .3s ease-in-out;
 }
 
+.navbar-nav>li {
+    float: right;
+    display: block;
+}
+
+/** navbar list items **/
+
 .navbar-default .navbar-nav li a {
     color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .navbar-default .navbar-nav li a:hover {
     color: black;
 }
 
-.navbar-right {
-    float: right!important;
-}
-
-@media (max-width: 5000px) {
-    .navbar-header {
-        float: none;
-    }
-    .navbar-left,
-    .navbar-right {
-        float: none !important;
-    }
-    .navbar-toggle {
-        display: block;
-    }
-    .navbar-collapse {
-        border-top: 1px solid transparent;
-        box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1);
-    }
-    .navbar-fixed-top {
-        top: 0;
-        border-width: 0 0 1px;
-    }
-    .navbar-collapse.collapse {
-        display: none!important;
-    }
-    .navbar-nav {
-        float: none!important;
-        margin-top: 7.5px;
-    }
-    .navbar-nav>li {
-        float: none;
-    }
-    .navbar-nav>li>a {
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
-    .collapse.in {
-        display: block !important;
-    }
-}
 
 /** Name & Title **/
 
- #titlecontainer{
+#titlecontainer {
     margin: auto;
     margin-left: 5%;
-    margin-top:20%;
+    margin-top: 20%;
     float: left;
     padding-right: 25px;
     border-radius: 25px;
@@ -191,24 +172,16 @@ a {
 
 #sculpture {
     padding: 40px;
-    background-attachment: fixed;
-    background-image: url(images/workshop.jpg);
-    background-position: top;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
-    margin-bottom: 0px;
-    opacity: 0.8;
-   
 }
 
-#sculpture-container{
+#sculpture-container {
     margin: auto;
+    border-style: groove;
     border-radius: 25px;
     background-color: rgb(239, 235, 235, 0.3);
     width: 100%;
     height: 100%;
-    background-size: cover;
+    background-size: contain;
     padding: 25px;
 }
 
@@ -221,33 +194,28 @@ a {
 /** Music Row **/
 
 #music {
-    background-color: white;
-    padding-top: 15px;
     padding-bottom: 35px;
 }
 
-.video-wrapper{
-     margin: auto;
-     background-color: rgb(239, 235, 235, 0.3);
-     border-radius: 25px;
-     border-color: black;
-     padding: 25px;
-     width: 100%;
-     height: 65%;
-     overflow: hidden;
+.video-wrapper {
+    margin: auto;
+    border-radius: 25px;
+    border-style: groove;
+    padding: 25px;
+    overflow: hidden;
 }
 
 iframe {
     width: 90%;
-    heigh: 50%;
+    height: 50%;
     margin: auto;
 }
 
 .vertical-center {
-  min-height: 100%;  
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 /** Contact Row **/
@@ -269,7 +237,7 @@ iframe {
 #contact-form-container {
     margin: auto;
     margin-left: 5%;
-    margin-top:20%;
+    margin-top: 20%;
     padding-right: 25px;
     border-radius: 25px;
     background-color: rgb(239, 235, 235, 0.3);
@@ -293,41 +261,33 @@ iframe {
 
 @media (max-width: 767px) {
     #contact-form-container {
-    margin: auto;
-    width: 100%;
-    ;}
-
+        margin: auto;
+        width: 100%;
+        ;
+    }
+}
 
 /** Footer **/
 
-footer {
-    color: black;
-    height: 10%;
-    bottom: 0;
-    width: 100%;
-    border-color: transparent;
-    background-color: rgb(239, 235, 235);
+#footer-container {
+    width: 100vw;
+    display: inline-block;
     text-align: center;
+    color: black;
+    
 }
 
-
-a{
-    color: transparent;
-    background-color: transparent;
-}
-
-/** Icons **/
-
-icons {
-    color: black;
-    padding: 10px 10px;
-    border-radius: 50%;
-    font-size: 38px;
-    text-align: center;
-    vertical-align: middle;
+#icons {
+    background-size: cover;
+    font-size: 48px;
+    letter-spacing: 27px;
     transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
     margin-top: 5px;
     margin-bottom: 2.5px;
+}
+
+i{
+    color: grey;
 }
