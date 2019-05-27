@@ -51,6 +51,9 @@ body {
     float: none;
     padding-right: 25px;
     border-radius: 25px;
+    
+/* conforming style of container to style of title and contact containers */
+
     background-color: rgb(239, 235, 235, 0.3);
     width: auto;
 }
