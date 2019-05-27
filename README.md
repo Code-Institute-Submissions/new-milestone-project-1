@@ -41,17 +41,21 @@ Bootstrap (3.3.7)
 
 ## Testing
 
+I conducted some automated testing using the W3C validator, which highlighted some obsolete code which I removed. 
+
 The fan and newbie user story achieved the intended outcome of providing them with a showcase of the artist and her work. In the title section, they can about the artist's background. The background image provides them with an immediate visceral sense of the artist at work. The artist's work is then presented more full in the sculpture and music sections. They can view the artist's social media and works in progress by clicking on the font awesome icons. 
 
 The contact form will not accept an invalid email address, and will provide the user as much. The 'required' attribute is added to the 'name,' 'email,' and 'message' fields. If those fields left blank, the form will not submit, and users will be notified as much. If a fan, newbie or potential customer is interested in contacting the artist, they must fill out all the fields in order for the form to submit. 
 
 All links have been manually tested to ensure that they are pointing to the correct destination. All links will open in a new tab using 'target="_blank". 
 
-By clicking on the submit button, the form redirects to a thankyou.html file, which thanks the user for submitting a message to the artist. Further, by clicking the links in the navbar, the scrollSpy effect works even if you're not viewing the sections in the same order they are listed in the dropdown navbar.
+By clicking on the submit button, the form redirects to a thankyou.html file, which thanks the user for submitting a message to the artist. 
+
+I also conducted accessibility testing. I verified that in the event an image fails to load, it's alt name will load in lieu of the image, and that these alt names will provide screen readers with the correct description of the image. 
 
 This site was tested on Chrome, Safari, Internet Explorer, FireFox, and on multiple mobile devices (in each case, using Google Chromes developer tools) to ensure compatibility and responsiveness. While the background image and videos are not currently very high resolution and appear pixelated, I plan to include higher resolution images and videos in future versions. 
 
-On a few occassions, the images failed to load due to typos in their file names. I verified that in the event an image fails to load, it's alt name will load in lieu of the image, and that these alt names will provide screen readers with the correct description of the image. 
+On a few occassions, the images failed to load due to typos in their file names. 
 
 ## Deployment
 
@@ -59,7 +63,7 @@ The site is hosted using GitHub pages. It is deployed from the master branch. It
 
 There were a number of differences between the deployed version and the development version:
 - The nav-menu list items were not revealing a grey background, which was visible on the deveolpment version.  
-- I needed to adjust the names of the image files so that they were all lower - an amendment which I had not made on the development version of the site. 
+- I needed to adjust the names of the image files so that they were all lower case, and upon fixing the file structure of the project - an amendment which I had not made on the development version of the site. 
 
 To run locally, you can clone this repository paste this git clone into your editor https://github.com/kalkiboru111/new-milestone-project-1.git into your terminal. To cut ties with this GitHub repository, type git remote rm origin into the terminal.
 
