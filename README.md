@@ -64,7 +64,7 @@ There were a number of differences between the deployed version and the developm
 To run locally, you can clone this repository paste this git clone into your editor https://github.com/kalkiboru111/new-milestone-project-1.git into your terminal. To cut ties with this GitHub repository, type git remote rm origin into the terminal.
 
 ## Credits
- The scrollSpy delay JavaScript function was found through this tutorial https://www.abeautifulsite.net/smoothly-scroll-to-an-element-without-a-jquery-plugin-2.
+To my mother, for the artwork.  
  
 ## Content
 All content in the "About" sections was written by me.

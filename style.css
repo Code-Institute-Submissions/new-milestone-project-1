@@ -27,10 +27,10 @@ body {
 /** navbar **/
 
 .navbar {
-    background-color: transparent;
     border-color: transparent;
     letter-spacing: 8px;
     text-transform: uppercase;
+    background-color: transparent;
 }
 
 .navbar .navbar-collapse {
@@ -44,12 +44,9 @@ body {
     text-align: right;
     margin-right: 1%;
     margin-top: 1%;
-    background-color: transparent;
 }
 
 .navbar.li.a {
-    background-color: transparent!important;
-    color: transparent;
     font-size: 1.12em;
     padding-left: 10px;
     padding-right: 10px;
